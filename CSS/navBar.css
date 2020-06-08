@@ -1,0 +1,53 @@
+#navBar
+{
+	background-color: indianred;
+	max-height: 105px;
+	position: sticky;
+	top:0;
+}
+
+ul
+{
+	list-style-type: none;
+	padding:0px;
+	margin: 0px;
+	overflow:hidden;
+}
+li
+{
+	float:left;
+	
+}
+li a
+{
+	display:block;
+	padding:20px;
+	text-align: center;
+}
+.size
+{
+	width:35px;
+	height:35px;
+	color:antiquewhite;
+}
+body
+{
+	margin:0px;
+	padding:0px;
+}
+li a:hover:not(.active)
+{
+	background-color: #f9c5bc;
+}
+.active
+{
+	background-color:burlywood;
+}
+.wobble
+{
+	
+}
+@keyframes shake
+{
+	
+}
