@@ -6,7 +6,7 @@
 	width:40%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top:30px;
+	padding-top:10px;
 	
 }
 #content
@@ -15,5 +15,13 @@
 	font-size: 2em;
 	text-align: center;
 	font-weight:500;
-	border:1px solid white;
+	border-top:2px solid black;
+}
+.para
+{
+	padding:30px 60px 30px 60px;
+	font-size: 1em;
+	text-align: center;
+	font-weight:500;
+
 }
