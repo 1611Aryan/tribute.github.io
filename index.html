@@ -8,15 +8,35 @@
 <link rel="stylesheet" type="text/css" href="CSS/font.css">
 <link rel="stylesheet" type="text/css" href="CSS/navBar.css">
 <link rel="stylesheet" type="text/css" href="CSS/photo.css">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 <body>
+<div id="progressBar"></div>
+<div id="scrollPath"></div>
 <div id="navBar">
-	<ul>
-		<li><a class="active" href="index.html"><img class="size wobble" src="Fonts/iconfinder_home_126572.svg" alt="home"></a></li>
-		<li><a href="Pages/Dead_1.html"><img  class="size wobble" src="Fonts/iconfinder_039_002_tomb_halloween_grave_cemetery_3792012.svg" alt="tombstone"></a></li>
-		<li><a href="Pages/Dead_2.html"><img  class="size wobble" src="Fonts/iconfinder_039_002_tomb_halloween_grave_cemetery_3792012.svg" alt="tombstone"></a></li>
-		<li><a href="Pages/Dead_3.html"><img  class="size wobble" src="Fonts/iconfinder_039_002_tomb_halloween_grave_cemetery_3792012.svg" alt="tombstone"></a></li>
-	</ul>
+  <ul>
+    <li><a class="active" href="index.html"><img class="size wobble" src="Fonts/iconfinder_home_126572.svg" alt="home"></a></li>
+    <li><a href="Pages/Dead_1.html"><img  class="size wobble" src="Fonts/iconfinder_039_002_tomb_halloween_grave_cemetery_3792012.svg" alt="tombstone"></a></li>
+    <li><a href="Pages/Dead_2.html"><img  class="size wobble" src="Fonts/iconfinder_039_002_tomb_halloween_grave_cemetery_3792012.svg" alt="tombstone"></a></li>
+    <li><a href="Pages/Dead_3.html"><img  class="size wobble" src="Fonts/iconfinder_039_002_tomb_halloween_grave_cemetery_3792012.svg" alt="tombstone"></a></li>
+  </ul>
 </div>
+<script type="text/javascript">
+        var width=document.getElementById("navBar");
+    var progress = document.getElementById('progressBar');
+    var outline = document.getElementById('scrollPath');
+        progress.style.height = 0 + "%";
+        outline.style.height = 0 + "%";
+var totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  var progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+  outline.style.height = progressHeight + "%";
+    if(progress.style.height!="0%")
+        width.style.width="98.75%";
+    else
+        width.style.width="100%";
+}
+</script>
 </body>
 </html>
